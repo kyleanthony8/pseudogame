@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=M+PLUS+Rounded+1c&family=Nabla&family=Zilla+Slab&display=swap');
+
+.imglogo {
+  display: inline-grid;
+  height: 100px;
+}
+
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  background-color: #232526;
+  border: 1px gray solid;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  border-right: 1px gray solid;
+  color: #c4c4c4;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+  color: #c4c4c4;
+  font-size: 2.2rem;
+  font-family: sans-serif;
+}
+
+.correct {
+  background-color: #28a745;
+}
+
+.incorrect {
+  background-color: #dc3545;
+}
+
+/* HUD */
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.hud-main-text {
+  text-align: center;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 800;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #E8EBF3;
+  margin-top: 1.5rem;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: #E8EBF3;
+  width: 0%;
+}

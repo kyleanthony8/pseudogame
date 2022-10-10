@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Score Board</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+
+<body>
+  <a href="https://github.com/kyleanthony8"><img loading="lazy" width="149" height="149"
+      src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149"
+      class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+  <div class="container">
+    <div id="end" class="flex-center flex-column">
+      <h2>Final Score</h2>
+      <h1 id="finalScore">Final Score</h1>
+      <form>
+        <input type="text" name="username" id="username" placeholder="username" />
+        <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
+          Save Score
+        </button>
+      </form>
+      <a class="btn" href="/game.html">Go Again</a>
+      <a class="btn" href="/index.html">Home</a>
+    </div>
+  </div>
+  <div class="footer">
+    <ul>
+      <li><a href="https://linkedin.com/in/kyleanthony8">LinkedIn</a></li>
+      <li><a href="https://codepen.io/kyleanthony">Codepen</a></li>
+      <li><a href="mailto:kyle.anthony8@gmail.com">Email</a></li>
+      <li><a href="https://dribbble.com/kyleanthony">Dribbble</a></li>
+      <li><a href="https://github.com/kyleanthony8">Github</a></li>
+      <li>
+        <p>👋</p>
+      </li>
+    </ul>
+  </div>
+  <script src="end.js" async></script>
+</body>
+
+</html>

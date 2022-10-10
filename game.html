@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Pseudo</title>
+  <link rel="stylesheet" href="app.css" />
+  <link rel="stylesheet" href="game.css" />
+</head>
+
+<body>
+  <a href="https://github.com/kyleanthony8"><img loading="lazy" width="149" height="149"
+      src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149"
+      class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+  <div class="container">
+
+    <div id="game" class="justify-center flex-column hidden">
+      <div id="hud">
+        <div id="hud-item">
+          <p id="progressText" class="hud-prefix">
+            Question
+          </p>
+          <div id="progressBar">
+            <div id="progressBarFull"></div>
+          </div>
+        </div>
+        <img src="img/logo.png" class="hud-prefix imglogo" alt="logo">
+        <div id="hud-item">
+          <p class="hud-prefix">
+            Score
+          </p>
+          <h1 class="hud-main-text" id="score">
+            0
+          </h1>
+        </div>
+      </div>
+      <h2 id="question"></h2>
+
+
+      <div id="insult"></div>
+      <div class="choice-container">
+        <p class="choice-prefix">A</p>
+        <p class="choice-text" data-number="1"></p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">B</p>
+        <p class="choice-text" data-number="2"></p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">C</p>
+        <p class="choice-text" data-number="3"></p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">D</p>
+        <p class="choice-text" data-number="4"></p>
+      </div>
+    </div>
+  </div>
+  <audio id="lets-play" src="https://millionaire-school.netlify.com/sounds/lets_play.mp3"></audio>
+  <audio id="easy" src="https://millionaire-school.netlify.com/sounds/easy.mp3"></audio>
+  <audio id="wrong-answer" src="https://millionaire-school.netlify.com/sounds/wrong_answer.mp3"></audio>
+  <audio id="correct-answer" src="https://millionaire-school.netlify.com/sounds/correct_answer.mp3"></audio>
+  <div class="footer">
+    <ul>
+      <li><a href="https://linkedin.com/in/kyleanthony8">LinkedIn</a></li>
+      <li><a href="https://codepen.io/kyleanthony">Codepen</a></li>
+      <li><a href="mailto:kyle.anthony8@gmail.com">Email</a></li>
+      <li><a href="https://dribbble.com/kyleanthony">Dribbble</a></li>
+      <li><a href="https://github.com/kyleanthony8">Github</a></li>
+      <li>
+        <p>👋</p>
+      </li>
+    </ul>
+  </div>
+  <script src="game.js" async></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
